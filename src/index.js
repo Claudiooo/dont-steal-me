@@ -16,6 +16,10 @@
 
     return hours + ':' + minutes;
   }
+  
+  function sayAhh(){
+  alert ('aaaahhhh');
+  }
 
   function readBattery(b) {
     battery = b || battery;
@@ -62,6 +66,7 @@
   window.onload = function () {
     battery.addEventListener('chargingchange', function() {
       readBattery();
+      sayAhh();
     });
 
     battery.addEventListener("levelchange", function() {
